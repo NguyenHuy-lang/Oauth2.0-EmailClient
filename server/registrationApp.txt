@@ -1,0 +1,9 @@
+http://localhost:8080/login/oauth2/code/azure-client
+
+
+client-secret : w9Z8Q~CsMxXfHKSInHgZQEJcoF4FRLP432GiMdBH
+
+client-id : 3401f60d-2ad7-4aa7-91b9-07334801fc1a
+
+
+https://graph.microsoft.com/Mail.Read, https://graph.microsoft.com/User.Read,https://graph.microsoft.com/Mail.Send

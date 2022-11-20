@@ -1,0 +1,39 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          azure-ad:
+            authorization-uri: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+            token-uri: https://login.microsoftonline.com/common/oauth2/v2.0/token
+            jwk-set-uri: https://login.microsoftonline.com/common/discovery/v2.0/keys
+        registration:
+          azure-client:
+            provider: azure-ad
+#            client-id: 3401f60d-2ad7-4aa7-91b9-07334801fc1a # akikaze
+#            client-secret: w9Z8Q~CsMxXfHKSInHgZQEJcoF4FRLP432GiMdBH # akikaze
+#            client-id: cf4e59eb-7ab0-484c-a96b-7c608cf006d8 # huynguyen-lang
+#            client-secret: JE58Q~FFIof_LQaYV6NckCWYJXJfNfA.lRqk4b7o # huynguyen-lang
+
+#            client-id: 1738587e-4866-4eec-8d49-1ae7cda19cc9  # mailptit
+
+
+#            client-id : f253d675-b0df-4d9f-b093-4a4e34b19661
+#            client-secret: Uuq8Q~CRl6pi~QGzzReNnMg2BXFo8Xcj38oNvcIz
+
+            client-id: 50414c5a-8080-4704-b847-bc490b217a8e
+            client-secret: Il98Q~PEADESGkGwOpx~plnm2n-KSzdV2Ed2naxD
+
+            authorization-grant-type: authorization_code
+            redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
+
+#            redirect-uri: 'https://www.facebook.com/'
+            scope: openid,profile, https://graph.microsoft.com/Mail.Read, https://graph.microsoft.com/User.Read,https://graph.microsoft.com/Mail.Send
+
+
+
+
+server:
+  forward-headers-strategy: native
+
+

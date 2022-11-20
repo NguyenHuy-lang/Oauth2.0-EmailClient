@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="683.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxmailclient.Controller.ReadListMailController">
+   <children>
+      <TableView fx:id="table" layoutX="12.0" layoutY="14.0" prefHeight="358.0" prefWidth="838.0">
+        <columns>
+          <TableColumn fx:id="address" prefWidth="126.39999103546143" text="address" />
+          <TableColumn fx:id="sentDateTime" prefWidth="121.60005187988281" text="sentDateTime" />
+            <TableColumn fx:id="subject" minWidth="0.0" prefWidth="127.199951171875" text="subject" />
+            <TableColumn fx:id="body" prefWidth="479.2000732421875" text="body" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonsend" layoutX="258.0" layoutY="552.0" mnemonicParsing="false" text="SEND" />
+      <Label fx:id="sendto" layoutX="128.0" layoutY="405.0" text="sendTo" />
+      <TextField fx:id="inputsendto" layoutX="223.0" layoutY="401.0" text="huynguyend19ptit@gmail.com" />
+      <Label fx:id="subjectsend" layoutX="128.0" layoutY="457.0" text="SubjectSend" />
+      <TextField fx:id="inputsubject" layoutX="223.0" layoutY="453.0" text="Test connection" />
+      <TextArea fx:id="inputcontent" layoutX="476.0" layoutY="401.0" prefHeight="200.0" prefWidth="317.0" text="hôm nay trời đẹp quá!" />
+   </children>
+</AnchorPane>
